@@ -9,6 +9,3 @@ print(linhat)
 print(present)
 print(linhat)
 
-
-
-
