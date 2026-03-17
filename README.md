@@ -42,7 +42,7 @@ RNF04 - Apos todos os testes, os arquivos serão unificados via Merge no reposit
 ## ◈ Lista de conteúdo complementar do projeto ◈
 
 ❏ Mapa Empatia.png - Mapa ilustrativo de empatia para entender o usuario, seus desejos, pensamentos e receios  
-❏ Kanban.png - Kanban do projeto elucidando as etapas de criação e passos seguidos  
+❏ Framework Kanban.jpg - Kanban do projeto elucidando as etapas de criação e passos seguidos  
 ❏ Relatorio.txt - Resultado do processamento da aplicacao, gerando um relatorio em formato txt para analise do desempenho dos alunos  
 
 ## ◈ Pseudocódigo do projeto ◈
