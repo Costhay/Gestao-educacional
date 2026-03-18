@@ -109,3 +109,37 @@ def encontrar_maior_media(alunos):
     return maior_media, melhores_alunos
 
 # Fim da função encontrar_maior_media()
+
+# Funcao para gerar relatorio
+
+def gerar_relatorio(alunos):
+    nome_arquivo = "relatorio.txt"
+
+    with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
+        arquivo.write("COORDENAÇÃO ACADÊMICA")
+        arquivo.write("RELATÓRIO DE DESEMPENHO DE ALUNOS\n")
+        arquivo.write("▪︎" * 50 + "\n\n")
+
+        for nome, notas in alunos:
+            media = calcular_media(notas)
+            status = "Aprovado" if media >= 7 else "Recuperação"
+            quantidade = len(notas)
+
+            arquivo.write(f"Aluno: {nome}\n")
+            arquivo.write(f"Notas: {notas}\n")
+            arquivo.write(f"Quantidade de atividades: {quantidade}\n")
+            arquivo.write(f"Média: {media:.2f}\n")
+            arquivo.write(f"Situação: {status}\n")
+            arquivo.write("▪︎" * 50 + "\n")
+
+        maior_media, melhores = encontrar_maior_media(alunos)
+
+        arquivo.write("\nMELHOR ALUNO (MÉDIA)\n")
+        arquivo.write("▪︎" * 50 + "\n")
+
+        for nome, media in melhores:
+            arquivo.write(f"{nome} - Média: {media:.2f}\n")
+
+    return nome_arquivo
+
+# Fim da função gerar_relatorio()

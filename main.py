@@ -42,4 +42,10 @@ print("\nPor fim, vamos encontrar a maior média entre os alunos")
 
 from processamento import encontrar_maior_media
 melhores_alunos = encontrar_maior_media(alunos)
-print(f"O(s) aluno(s) com a maior média: {melhores_alunos:.2f}")
+print(f"O(s) aluno(s) com a maior média: {melhores_alunos}")
+
+# Importação da função para gerar relatorio: def gerar_relatorio() do arquivo processamento.py
+
+print("\nGerando relatório final dos alunos")
+from processamento import gerar_relatorio
+gerar_relatorio(alunos)
