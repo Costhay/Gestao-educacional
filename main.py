@@ -9,3 +9,11 @@ print(linhat)
 print(present)
 print(linhat)
 
+# Importação da função de cadastro de alunos: def cadastrar_alunos() do arquivo processamento.py
+
+print("Vamos começar cadastrando os alunos e suas notas")
+
+from processamento import cadastrar_alunos
+
+alunos = cadastrar_alunos()
+print(alunos)
