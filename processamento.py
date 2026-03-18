@@ -63,3 +63,8 @@ Digite s para 'Sim', ou n para 'Não': """).lower()
     return alunos
 
 # Fim da função cadastrar_alunos()
+
+# Função para calcular a média das notas de cada aluno
+
+def calcular_media(notas):
+    return sum(notas) / len(notas)
