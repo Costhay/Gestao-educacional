@@ -35,3 +35,11 @@ print("\nPróximo passo, vamos mostrar os resultados finais de cada aluno")
 
 from processamento import mostrar_resultados
 mostrar_resultados(alunos)
+
+# Importação da função de encontrar a maior média: def encontrar_maior_media() do arquivo processamento.py
+
+print("\nPor fim, vamos encontrar a maior média entre os alunos")
+
+from processamento import encontrar_maior_media
+melhores_alunos = encontrar_maior_media(alunos)
+print(f"O(s) aluno(s) com a maior média: {melhores_alunos:.2f}")

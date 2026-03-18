@@ -87,3 +87,25 @@ def mostrar_resultados(alunos):
         print(f"Média: {media:.2f}")
         print(f"Status: {status}")
         print("▪︎" * 50)
+
+# fim da função mostrar_resultados()
+
+# Função para encontrar a maior média de aluno
+
+def encontrar_maior_media(alunos):
+    maior_media = 0
+    melhores_alunos = []
+
+    for nome, notas in alunos:
+        media = calcular_media(notas)
+
+        if media > maior_media:
+            maior_media = media
+            melhores_alunos = [(nome, media)]
+
+        elif media == maior_media:
+            melhores_alunos.append((nome, media))
+
+    return maior_media, melhores_alunos
+
+# Fim da função encontrar_maior_media()
