@@ -11,7 +11,7 @@ print(linhat)
 
 # Importação da função de cadastro de alunos: def cadastrar_alunos() do arquivo processamento.py
 
-print("Vamos começar cadastrando os alunos e suas notas")
+print("\nVamos começar cadastrando os alunos e suas notas")
 
 from processamento import cadastrar_alunos
 
@@ -21,10 +21,17 @@ print(linhat)
 
 # Importação da função de cálculo de média: def calcular_media() do arquivo processamento.py
 
-print("Agora vamos calcular a média das notas de cada aluno")
+print("\nAgora vamos calcular a média das notas de cada aluno")
 
 from processamento import calcular_media
 
 for nome, notas in alunos:
     media = calcular_media(notas)
     print(f"A média de {nome} é: {media:.2f}")
+
+# Importação da função de mostrar resultados: def mostrar_resultados() do arquivo processamento.py
+
+print("\nPróximo passo, vamos mostrar os resultados finais de cada aluno")
+
+from processamento import mostrar_resultados
+mostrar_resultados(alunos)

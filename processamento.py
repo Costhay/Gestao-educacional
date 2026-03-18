@@ -68,3 +68,22 @@ Digite s para 'Sim', ou n para 'Não': """).lower()
 
 def calcular_media(notas):
     return sum(notas) / len(notas)
+
+# Fim da função calcular_media()
+
+# Funcao para mostrar os resultados
+
+def mostrar_resultados(alunos):
+    print("\nResultado dos alunos:\n")
+
+    for nome, notas in alunos:
+        media = calcular_media(notas)
+        status = "Aprovado" if media >= 7 else "Recuperação"
+        quantidade = len(notas)
+
+        print(f"Aluno: {nome}")
+        print(f"Notas: {notas}")
+        print(f"Quantidade de atividades: {quantidade}")
+        print(f"Média: {media:.2f}")
+        print(f"Status: {status}")
+        print("▪︎" * 50)
